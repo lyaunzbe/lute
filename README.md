@@ -17,6 +17,7 @@ TODO:
 * Multiple inputs (for things like mixing and concatenating files)
 * Multiple outputs
 * Pseudo effects (:newfile, :restart). Example: (sox infile.wav output.wav trim 0 30 : newfile : restart). Splits infile into n files, each 30 seconds in length. 
+
 ### Installation
 
 Before installing the module, you will need to install SoX. If you have homebrew, this is as simple as:
