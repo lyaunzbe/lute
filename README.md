@@ -36,7 +36,7 @@ var lute = require('lute');
 var task = require('./path/to/your/task.json')
 
 // Pass an array of audio files, aswell as a json object defining the tasks to execute on these files
-lute(['/song1.wav', 'song2.mp3'], task, callback);
+lute(['song1.wav', 'song2.mp3'], task, callback);
 ```
 
 ### Adding flanger effect & transcoding to .wav
