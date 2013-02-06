@@ -1,0 +1,29 @@
+{
+  "author": "Ben Lyaunzon <zbruggeman@me.com>",
+  "name": "lute",
+  "description": "A task-based node library for processing audio with SoX",
+  "version": "0.0.0",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lyaunzbe/lute.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lyaunzbe/lute/issues"
+  },
+  "main": "./lib/lute.js",
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "dependencies": {
+    "lodash": "~1.0.0-rc.3",
+    "async": "~0.2.2"
+  },
+  "devDependencies": {
+    "tap": "~0.3.2"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": ">=0.6"
+  }
+}
