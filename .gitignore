@@ -7,7 +7,8 @@ lib-cov
 *.dat
 *.out
 *.pid
-*.gz
+*.gzi
+*.ogg
 
 pids
 logs
