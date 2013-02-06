@@ -32,6 +32,21 @@ lute(['/song1.wav', 'song2.mp3'], task, callback);
 ### Example task file
 ```json
 {
+  "global-opts":{
+
+  },
+  "infile":{
+    "format-opts":{
+
+    }
+  },
+
+  "outfile":{
+    "filename": '..'
+    "format-opts":{
+
+    }
+  }
     "effects": {
         "flanger": "0.6 0.87 3.0 0.9 0.5 -s",
     },

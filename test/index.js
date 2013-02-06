@@ -11,9 +11,13 @@ test('Module definition', function(t){
 
 test('Processesing an example task', function(t){
   t.plan(1);
-  lute(['rick.ogg'],task, function(err){
-    t.equal(undefined, err, 'Should return no errors or warnings');
+  lute(['rick.ogg', 'showtime.ogg'],task, function(err){
+    t.equal(null, err, 'Should return no errors or warnings');
     t.end();
   });
 });
+
+//lute(['rick.ogg', 'showtime.ogg'],task, function(err){
+  //console.log(err);
+//});
 
