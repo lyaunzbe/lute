@@ -1,11 +1,13 @@
-## Lute
+## Lute 
+
+![lute](https://raw.github.com/lyaunzbe/lute/master/lute.jpeg)
 
 Lute is a task-based library for processing and manipulating data using SoX.
 
 Inspired by diy/wizardry.
 
 Current capabilities:
-* Transcoding : infile1 -> outfile2
+* Batch transcoding
 * Effect(s) and Filter(s)
 
 TODO:
@@ -37,29 +39,22 @@ var task = require('./path/to/your/task.json')
 lute(['/song1.wav', 'song2.mp3'], task, callback);
 ```
 
-### Example task file
+### Adding flanger effect & transcoding to .wav
 ```json
 {
-  "global-opts":{
-
-  },
-  "infile":{
-    "format-opts":{
-
-    }
-  },
-
   "outfile":{
-    "filename": '..'
-    "format-opts":{
-
-    }
+    "filename": ['song1.wav', 'song2.wav'],
+    "format-opts":{}
   }
-    "effects": {
-        "flanger": "0.6 0.87 3.0 0.9 0.5 -s",
-    },
+  "effects": {
+    "flanger": "0.6 0.87 3.0 0.9 0.5 -s",
+  }
 }
 ```
+
+
+If no outfile filename is given, dont worry, one will be provided.
+When in doubt, consult the official documentation.
 
 ### Testing
 ```bash
