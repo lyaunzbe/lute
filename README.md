@@ -43,9 +43,9 @@ lute(['/song1.wav', 'song2.mp3'], task, callback);
 ```json
 {
   "outfile":{
-    "filename": ['song1.wav', 'song2.wav'],
+    "filename": ["song1.wav", "song2.wav"],
     "format-opts":{}
-  }
+  },
   "effects": {
     "flanger": "0.6 0.87 3.0 0.9 0.5 -s",
   }
