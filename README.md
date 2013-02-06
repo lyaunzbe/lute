@@ -9,7 +9,7 @@ Inspired by diy/wizardry.
 
 Current capabilities:
 * Transcoding : infile1 -> outfile2
-* 
+* Effect(s) and Filter(s)
 
 TODO:
 * Global options
