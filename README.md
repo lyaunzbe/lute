@@ -2,7 +2,7 @@
 
 ![lute](https://raw.github.com/lyaunzbe/lute/master/lute.jpeg)
 
-Lute is a task-based library for processing and manipulating data using SoX.
+Lute is a task-based library for processing and manipulating audio using SoX.
 
 Inspired by diy/wizardry.
 
@@ -53,7 +53,7 @@ lute(['/song1.wav', 'song2.mp3'], task, callback);
 ```
 
 
-If no outfile filename is given, dont worry, one will be provided.
+If no outfile filename(s) are given, dont worry, they will be provided.
 When in doubt, consult the official documentation.
 
 ### Testing
