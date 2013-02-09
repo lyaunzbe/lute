@@ -1,4 +1,4 @@
-## Lute 
+# Lute 
 
 ![lute](https://raw.github.com/lyaunzbe/lute/master/lute.jpeg)
 
@@ -17,7 +17,7 @@ Roadmap:
 * Multiple outputs
 * Pseudo effects (:newfile, :restart). Example: (sox infile.wav output.wav trim 0 30 : newfile : restart). Splits infile into n files, each 30 seconds in length. 
 
-### Installation
+## Installation
 
 Before installing the module, you will need to install SoX. If you have homebrew, this is as simple as:
 
@@ -42,9 +42,9 @@ var task = require('./path/to/your/task.json')
 
 lute(['song1.wav', 'song2.mp3'], task, callback);
 ```
-### Examples
+## Examples
 
-## Batch transcode, no output filenames given
+### Batch transcode, no output filenames given
 ```javascript
 var task = {
   "outfile":{
@@ -55,7 +55,7 @@ var task = {
 lute(['Track-1.flac', 'Track-2.flac'], task, callback);
 // Outputs Track-1.mp3 & Track-2.mp3
 ```
-## Transcode and flanger effect, w/ output filenames 
+### Transcode and flanger effect, w/ output filenames 
 ```javascript
 var task = {
   "outfile":{
@@ -71,7 +71,7 @@ lute = (['Ride_With_It.flac', 'Sweet_Home_Alabama.flac'],task, callback);
 // Outputs song1.wav and song2.wav
 ```
 
-## Effect chain, no transcode and no output filenames
+### Effect chain, no transcode and no output filenames
 ```javascript
 var task = {
   "effects":{
@@ -89,7 +89,7 @@ In general, if you aren't transcoding and dont provide any output
 filenames, they will be provied for you in the format of
 infile_epochtime.extension
 
-### Testing
+## Testing
 ```bash
 npm test
 ```
