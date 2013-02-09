@@ -2,7 +2,7 @@
 
 ![lute](https://raw.github.com/lyaunzbe/lute/master/lute.jpeg)
 
-Lute is a task-based library for processing and manipulating data using SoX.
+Lute is a task-based library for processing and manipulating audio using SoX.
 
 Inspired by the [wizardry](http://github.com/diy/wizardry).
 
@@ -52,7 +52,7 @@ var task = {
   }
 };
 
-lute(['Track-1.flac', 'Track-2.flac'], callback);
+lute(['Track-1.flac', 'Track-2.flac'], task, callback);
 // Outputs Track-1.mp3 & Track-2.mp3
 ```
 ## Transcode and flanger effect, w/ output filenames 
@@ -67,7 +67,7 @@ var task = {
   }
 };
 
-lute = (['Ride_With_It.flac', 'Sweet_Home_Alabama.flac'], callback);
+lute = (['Ride_With_It.flac', 'Sweet_Home_Alabama.flac'],task, callback);
 // Outputs song1.wav and song2.wav
 ```
 
@@ -81,7 +81,7 @@ var task = {
   }
 }
 
-lute = (['tuneA.ogg', 'tuneB.ogg'], callback);
+lute = (['tuneA.ogg', 'tuneB.ogg'], task, callback);
 // Outputs tuneA_1360372225.ogg and tuneB_1360372235.ogg.
 ```
 
