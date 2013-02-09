@@ -1,5 +1,5 @@
 {
-  "author": "Ben Lyaunzon <zbruggeman@me.com>",
+  "author": "Ben Lyaunzon <lyaunzon.b@gmail.com>",
   "name": "lute",
   "description": "A task-based node library for processing audio with SoX",
   "version": "0.0.0",
