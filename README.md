@@ -6,16 +6,9 @@ Lute is a task-based library for processing and manipulating audio using SoX.
 
 Inspired by the [wizardry](http://github.com/diy/wizardry).
 
-Current capabilities:
-* Batch transcoding
-* Effect(s) and Filter(s)
-
-Roadmap:
-* Global options
-* Format options
-* Multiple inputs (for things like mixing and concatenating files)
-* Multiple outputs
-* Pseudo effects (:newfile, :restart). Example: (sox infile.wav output.wav trim 0 30 : newfile : restart). Splits infile into n files, each 30 seconds in length. 
+###Current capabilities:
+* Batch transcodes.
+* Applying filter and effect chains.
 
 ## Installation
 
@@ -85,9 +78,16 @@ lute = (['tuneA.ogg', 'tuneB.ogg'], task, callback);
 // Outputs tuneA_1360372225.ogg and tuneB_1360372235.ogg.
 ```
 
-In general, if you aren't transcoding and dont provide any output
+In general, if you aren't transcoding and don't provide any output
 filenames, they will be provied for you in the format of
 infile_epochtime.extension
+
+## Roadmap
+* Global options
+* Format options
+* Multiple inputs (for things like mixing and concatenating files)
+* Multiple outputs
+* Pseudo effects (:newfile, :restart). Example: (sox infile.wav output.wav trim 0 30 : newfile : restart). Splits infile into n files, each 30 seconds in length. 
 
 ## Testing
 ```bash
